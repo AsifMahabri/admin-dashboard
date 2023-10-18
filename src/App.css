@@ -12,6 +12,28 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.main {
+  width: 300%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+table {
+  border: 2px solid forestgreen;
+  width: 800px;
+  height: 200px;
+  align-items: start;
+}
+
+th {
+  border-bottom: 1px solid black;
+  align-items: start;
+}
+
+td {
+  text-align: start;
+}
 
 .App-header {
   background-color: #282c34;
@@ -35,4 +57,37 @@
   to {
     transform: rotate(360deg);
   }
+
+}
+.item-a {
+  grid-area: header;
+}
+.item-b {
+  grid-area: main;
+  display: inline;
+}
+.item-c {
+  grid-area: footer;
+}
+.container {
+  /* display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header header header"
+    "main . main"
+    "footer footer footer footer"; */
+    grid-template-columns: 1fr 1fr;
+  grid-template-rows:  auto ; 
+  
+  row-gap: 15px; 
+  align-items: center;
+  align-content: stretch
+}
+.search-box {
+  position: relative;        
+  float: right;
+}
+.pie-head {
+  float: left;
 }
